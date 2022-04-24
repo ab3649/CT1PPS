@@ -1,0 +1,75 @@
+//1
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float d;
+    scanf("%f", &d);
+    printf("%0.0f.00 m\n", (d*1000));
+    printf("%0.0f.00 ft\n", (d*3280.84));
+    printf("%0.0f.00 in\n", (d*39370.1));
+    printf("%0.0f.00 cm", (d*100000));
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+//2
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int m,n;
+    scanf("%d %d", &m,&n);
+    printf("%d", (int)ceil((m*n)/2.0));
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+//3
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float sf;
+    scanf("%f", &sf);
+    printf("%0.2f sq.ft is equal to %0.2f acres", sf,(sf/43560));
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+//4
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int amtgiven,billamt;
+    scanf("%d %d", &amtgiven,&billamt);
+    printf("Quotient:%d\n", amtgiven/billamt);
+    printf("Remainder:%d", amtgiven%billamt);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+//5
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int t,d,h,m,s;
+    scanf("%d", &t);
+    d=t/(24*3600);
+    t=t%(24*3600);
+    h=t/3600;
+    t%=3600;
+    m=t/60;
+    s=t%60;
+    printf("The Duration is %d days %d hours %d minutes %d seconds",d,h,m,s);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
